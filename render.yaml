@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: learning-tracker
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: REQUIRE_DATABASE_URL
+        value: "true"
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: COOKIE_SAMESITE
+        value: lax

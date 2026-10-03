@@ -1,0 +1,11 @@
+.git
+.github
+**/.DS_Store
+**/.env*
+**/.venv
+**/__pycache__
+**/*.db
+**/node_modules
+**/dist
+**/playwright-report
+**/test-results
